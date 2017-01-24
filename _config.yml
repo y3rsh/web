@@ -13,12 +13,12 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: y3rsh
+title: Josh McVey
 email: yersh13@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  Homepage of y3rsh
+  All things y3rsh
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://y3rsh.com" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://y3rsh.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: y3rsh
 github_username:  y3rsh
 
@@ -30,3 +30,7 @@ gems:
 exclude:
   - Gemfile
   - Gemfile.lock
+
+timezone: America/Chicago
+disqus:
+    shortname: y3rsh
