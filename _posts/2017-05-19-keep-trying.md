@@ -4,8 +4,8 @@ title: Fatties Keep Trying
 comments: true
 categories: fat
 ---
-I saw this article posted a few places.  It made me want to write this.
-[Fat but fit is a big fat myth](http://www.bbc.com/news/health-39936138)
+I saw this article posted a few places. [Fat but fit is a big fat myth](http://www.bbc.com/news/health-39936138)
+It made me want to write this.
 
 I’m fat and relatively fit, never for a second have I thought I am healthy. The extra weight means that I am not as efficient or as fast as I could be as a runner. It also means I am far more likely to suffer any number of health issues. Got it, and by the way, so do 99.999% of all other fat people. Too bad knowledge is not all it takes to change behavior.
 
