@@ -34,3 +34,8 @@ exclude:
 timezone: America/Chicago
 disqus:
     shortname: y3rsh
+defaults:
+  - scope:
+      path: "assets/img"
+    values:
+      image: true
