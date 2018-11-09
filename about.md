@@ -11,4 +11,4 @@ permalink: /about/
 - [Trail Hawks are awesome.](https://trailhawks.com) - Kindness to Life and Land!
 
 ##### Links
-- [Strava](https://www.strava.com/athletes/4332172/training/log)
+- [Strava](https://www.strava.com/athletes/4332172)
