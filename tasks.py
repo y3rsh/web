@@ -29,21 +29,9 @@ def clean(c):
 
 
 @task
-def build(c):
-    """Build local version of site"""
-    c.run("pelican -s pelicanconf.py")
-
-
-@task
 def rebuild(c):
     """`build` with the delete switch"""
     c.run("pelican -d")
-
-
-@task
-def regenerate(c):
-    """Automatically regenerate site upon file modification"""
-    c.run("pelican -r -s pelicanconf.py")
 
 
 @task
@@ -64,7 +52,7 @@ def serve(c):
 @task
 def up(c):
     """`build`, then `serve`"""
-    rebuild(c)
+    rebuild(c)  # uses default for local pelicanconf.py
     serve(c)
 
 
@@ -72,18 +60,6 @@ def up(c):
 def make_prod(c):
     """Build production version of site"""
     c.run("pelican -s publishconf.py")
-
-
-@task
-def publish(c):
-    """Publish to production via rsync"""
-    c.run("pelican -s publishconf.py")
-    c.run(
-        'rsync --delete --exclude ".DS_Store" -pthrvz -c '
-        "{} {production}:{dest_path}".format(
-            CONFIG["deploy_path"].rstrip("/") + "/", **CONFIG
-        )
-    )
 
 
 @task

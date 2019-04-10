@@ -4,11 +4,12 @@
         {% block head %}
         <title>{% block title %}{{ SITENAME }}{% endblock %}</title>
         <meta charset="utf-8" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link href="{{ SITEURL }}/theme/static/css/style.css" rel="stylesheet" />
-	{% if FAVICON %}
-	<link rel="shortcut icon" href="{{ SITEURL }}/{{ FAVICON }}" type="image/x-icon" />
-	{% endif %}
+  {% if FAVICON %}
+  <link rel="shortcut icon" href="{{ SITEURL }}/{{ FAVICON }}" type="image/x-icon" />
+  {% endif %}
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
         {% if FEED_ALL_ATOM %}
         <link href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} Full Atom Feed" />
@@ -40,19 +41,43 @@
     <body id="index" class="archive">
         <div class="container">
             <div class="header">
-                <ul class="nav nav-pills pull-right">
-                    <li class="{% block navclass %}{{ NAVCLASS }}{% endblock navclass %}"><a href="{{ SITEURL }}">Home</a></li>
+                <h3 class="text-muted"><a href="{{ SITEURL }}">{{ SITENAME }}</a></h3>
+                <ul class="nav nav-pills">
                 {% for p in pages %}
                     <li{% if p == page %} class="active"{% endif %}><a href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a></li>
                 {% endfor %}
                     <li{% if author or tag %} class="active"{% endif %}{% block archclass %}{{ ARCHCLASS }}{% endblock archclass %}><a href="{{ SITEURL }}/archives.html">Archives</a></li>
                 </ul>
-                <h3 class="text-muted"><a href="{{ SITEURL }}">{{ SITENAME }}</a></h3>
-				<h2 class="text-muted">{{ SITESUBTITLE }}</h2>
+        <h2 class="text-muted">{{ SITESUBTITLE }}</h2>
              </div>
             {% block content %}
             {% endblock %}
             <footer id="contentinfo" class="footer">
+                <ul class="list-inline">
+                {% for name, link in SOCIAL %}
+                <li class="list-inline-item">
+                  <a href="{{ link }}" target="_blank" title="{{ name }}">
+                  {% if name == 'Twitter' %}
+                    <i class="fa fa-twitter-square"></i>
+                  {% elif name == 'Github' %}
+                    <i class="fa fa-github-square"></i>
+                  {% elif name == 'facebook' %}
+                    <i class="fa fa-facebook-square"></i>
+                  {% elif name == 'googleplus' or name == 'google+' %}
+                    <i class="fa fa-google-plus-square"></i>
+                  {% elif name == 'hatebu' %}
+                    <i class="fa fa-hatebu-square"></i>
+                  {% elif name == 'bitbucket' %}
+                    <i class="fa fa-bitbucket-square"></i>
+                  {% elif name == 'Instagram' %}
+                    <i class="fa fa-instagram"></i>
+                  {% elif name == 'Linkedin' %}
+                    <i class="fa fa-linkedin-square"></i>
+                  {% endif %}
+                  </a>
+                </li>
+                {% endfor %}
+                </ul>
                     <nav class="pull-right bottom-nav">
                         <a href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}">RSS</a>
                     </nav>
@@ -61,7 +86,12 @@
                     </address><!-- /#about -->
             </footer><!-- /#contentinfo -->
         </div><!-- container -->
-		{% include 'analytics.html' %}
+    {% include 'analytics.html' %}
                 {% include 'piwik.html' %}
+                <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+                <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+                <script src="https://use.fontawesome.com/599681119d.js"></script>
     </body>
+
 </html>
