@@ -1,0 +1,20 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+
+[packages]
+pelican = "*"
+markdown = "*"
+pylint = "*"
+black = {version = "*",markers = "python_version >= '3.7'"}
+ghp-import = "*"
+invoke = "*"
+
+[requires]
+python_version = "3.7"
+
+[pipenv]
+allow_prereleases = true
