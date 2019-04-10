@@ -46,7 +46,7 @@
                 {% for p in pages %}
                     <li{% if p == page %} class="nav-link active"{% endif %}><a href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a></li>
                 {% endfor %}
-                    <li{% if author or tag %} class="nav-link active"{% endif %}{% block archclass %}{{ ARCHCLASS }}{% endblock archclass %}><a href="{{ SITEURL }}/archives.html">Archives</a></li>
+<!--                     <li{% if author or tag %} class="nav-link active"{% endif %}{% block archclass %}{{ ARCHCLASS }}{% endblock archclass %}><a href="{{ SITEURL }}/archives.html">Archives</a></li> -->
                 </ul>
         <h2 class="text-muted">{{ SITESUBTITLE }}</h2>
              </div>

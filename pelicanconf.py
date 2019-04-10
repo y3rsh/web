@@ -34,6 +34,7 @@ SOCIAL = (
     ("Github", "https://github.com/y3rsh"),
     ("Twitter", "https://twitter.com/y3rsh"),
     ("Instagram", "https://www.instagram.com/y3rsh/"),
+    ("Linkedin", "https://www.linkedin.com/in/joshmcvey/"),
 )
 
 DEFAULT_PAGINATION = False
