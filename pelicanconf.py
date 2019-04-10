@@ -5,9 +5,9 @@ from __future__ import unicode_literals
 AUTHOR = "Josh"
 SITENAME = "Josh McVey"
 SITEURL = "https://y3rsh.com"
-
-PATH = "docs"
-
+DISPLAY_PAGES_ON_MENU = True
+PATH = "content"
+OUTPUT_PATH = "docs/"
 TIMEZONE = "America/Chicago"
 
 DEFAULT_LANG = "en"
@@ -37,3 +37,12 @@ DEFAULT_PAGINATION = False
 
 # Uncomment following line if you want document-relative URLs when developing
 # RELATIVE_URLS = True
+STATIC_PATHS = [
+    'images',
+    'extra',
+]
+
+EXTRA_PATH_METADATA = {
+    'extra/favicon.ico': {'path': 'favicon.ico'},
+    'extra/CNAME': {'path': 'CNAME'},
+}
