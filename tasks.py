@@ -14,7 +14,7 @@ CONFIG = {
     "deploy_path": "docs",
     # Github Pages configuration
     "github_pages_branch": "master",
-    "commit_message": "'Publish site on {}'".format(datetime.date.today().isoformat()),
+    "commit_message": f"""'Publish site on {datetime.date.today().isoformat()}'""",
     # Port for `serve`
     "port": 8000,
 }
@@ -37,7 +37,7 @@ def build(c):
 @task
 def rebuild(c):
     """`build` with the delete switch"""
-    c.run("pelican -d -s pelicanconf.py")
+    c.run("pelican -d")
 
 
 @task
@@ -62,14 +62,14 @@ def serve(c):
 
 
 @task
-def reserve(c):
+def up(c):
     """`build`, then `serve`"""
-    build(c)
+    rebuild(c)
     serve(c)
 
 
 @task
-def preview(c):
+def make_prod(c):
     """Build production version of site"""
     c.run("pelican -s publishconf.py")
 
@@ -87,11 +87,9 @@ def publish(c):
 
 
 @task
-def gh_pages(c):
+def prod_deploy(c):
     """Publish to GitHub Pages"""
-    preview(c)
-    c.run(
-        "ghp-import -b {github_pages_branch} "
-        "-m {commit_message} "
-        "{deploy_path} -p".format(**CONFIG)
-    )
+    make_prod(c)
+    c.run("git add .")
+    c.run(f"git commit -m {CONFIG.get('commit_message')}")
+    c.run(f"git push origin {CONFIG.get('github_pages_branch')}")

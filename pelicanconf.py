@@ -4,12 +4,14 @@ from __future__ import unicode_literals
 
 AUTHOR = "Josh"
 SITENAME = "Josh McVey"
-SITEURL = "https://y3rsh.com"
+PORT = "8000"
+SITEURL = f"http://localhost:{PORT}"
+RELATIVE_URLS = True
 DISPLAY_PAGES_ON_MENU = True
 PATH = "content"
 OUTPUT_PATH = "docs/"
 TIMEZONE = "America/Chicago"
-
+DELETE_OUTPUT_DIRECTORY = True
 DEFAULT_LANG = "en"
 
 # Feed generation is usually not desired when developing
@@ -18,7 +20,8 @@ CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
-
+THEME = "simple-bootstrap"
+TWITTER_USERNAME = "y3rsh"
 # Blogroll
 LINKS = (
     ("Pelican", "http://getpelican.com/"),
@@ -37,12 +40,9 @@ DEFAULT_PAGINATION = False
 
 # Uncomment following line if you want document-relative URLs when developing
 # RELATIVE_URLS = True
-STATIC_PATHS = [
-    'images',
-    'extra',
-]
+STATIC_PATHS = ["images", "extra"]
 
 EXTRA_PATH_METADATA = {
-    'extra/favicon.ico': {'path': 'favicon.ico'},
-    'extra/CNAME': {'path': 'CNAME'},
+    "extra/favicon.ico": {"path": "favicon.ico"},
+    "extra/CNAME": {"path": "CNAME"},
 }
