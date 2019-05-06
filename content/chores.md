@@ -13,7 +13,7 @@ I recently updated my local setup to include a [nice mic and some fabulous headp
 
 #### [Cron with Crontab](https://opensource.com/article/17/11/how-use-cron-linux)
 
-So I decided to play play an alert a few times _in_ the headphones, at least for recurring meetings.
+So I decided to play an alert a few times _in_ the headphones, at least for recurring meetings.
 
 ```shell
 crontab -e

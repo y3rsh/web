@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom"><title>Josh McVey</title><link href="https://y3rsh.com/" rel="alternate"></link><link href="https://y3rsh.com/feeds/all.atom.xml" rel="self"></link><id>https://y3rsh.com/</id><updated>2019-05-04T08:00:00-05:00</updated><entry><title>Work Setup</title><link href="https://y3rsh.com/setup.html" rel="alternate"></link><published>2019-05-04T08:00:00-05:00</published><updated>2019-05-04T08:00:00-05:00</updated><author><name>Josh McVey</name></author><id>tag:y3rsh.com,2019-05-04:/setup.html</id><summary type="html">&lt;p&gt;Nice scripts and tools&lt;/p&gt;</summary><content type="html">&lt;p&gt;I recently updated my local setup to include a &lt;a href="https://www.amazon.com/hz/wishlist/ls/33G80B4QPE61K"&gt;nice mic and some fabulous headphones.&lt;/a&gt;  I totally recommend everything on the list.  Paired with my 2015 Macbook Pro my coworkers say I sound like I am on the radio in Zoom meetings.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;BUT&lt;/strong&gt; the headphones work almost too well at shutting out the world!  I used my Google home to alert me 1 minute before meetings.  When I am playing music I can't hear the Google home go off... at max volume....... half a meter away...........&lt;/p&gt;
 &lt;h4&gt;&lt;a href="https://opensource.com/article/17/11/how-use-cron-linux"&gt;Cron with Crontab&lt;/a&gt;&lt;/h4&gt;
-&lt;p&gt;So I decided to play play an alert a few times &lt;em&gt;in&lt;/em&gt; the headphones, at least for recurring meetings.&lt;/p&gt;
+&lt;p&gt;So I decided to play an alert a few times &lt;em&gt;in&lt;/em&gt; the headphones, at least for recurring meetings.&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;crontab -e
 &lt;/pre&gt;&lt;/div&gt;
 
