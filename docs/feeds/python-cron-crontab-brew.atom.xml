@@ -18,8 +18,10 @@
 &lt;li&gt;At 8:00 AM everyday, &lt;a href="https://developer.apple.com/library/archive/documentation/MacOSX/Conceptual/BPSystemStartup/Chapters/ScheduledJobs.html"&gt;if my machine is awake&lt;/a&gt; brew will upgrade.&lt;/li&gt;
 &lt;li&gt;At 8:01 AM everyday, &lt;a href="https://developer.apple.com/library/archive/documentation/MacOSX/Conceptual/BPSystemStartup/Chapters/ScheduledJobs.html"&gt;if my machine is awake&lt;/a&gt; this couple of commands will navigate to a repo I have for scripts, pipenv run to use my dependencies, and run the script.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;00 08 * * * brew upgrade
-01 08 * * * cd /directory/where/you/put/the/file &amp;amp;&amp;amp; pipenv run python ./getchromedriver.py
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="m"&gt;00&lt;/span&gt; &lt;span class="m"&gt;08&lt;/span&gt; * * * /usr/local/bin/brew upgrade &amp;gt;/tmp/stdout.log &lt;span class="m"&gt;2&lt;/span&gt;&amp;gt;/tmp/stderr.log
+&lt;span class="m"&gt;01&lt;/span&gt; &lt;span class="m"&gt;08&lt;/span&gt; * * * &lt;span class="nb"&gt;cd&lt;/span&gt; /directory/where/you/put/the/file &lt;span class="se"&gt;\&lt;/span&gt;
+&lt;span class="o"&gt;&amp;amp;&amp;amp;&lt;/span&gt; pipenv run python ./getchromedriver.py &lt;span class="se"&gt;\&lt;/span&gt;
+&amp;gt;/tmp/stdout.log &lt;span class="m"&gt;2&lt;/span&gt;&amp;gt;/tmp/stderr.log
 &lt;/pre&gt;&lt;/div&gt;
 
 

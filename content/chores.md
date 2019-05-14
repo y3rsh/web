@@ -32,9 +32,11 @@ I also added a couple other tasks to [crontab.](https://opensource.com/article/1
 - At 8:00 AM everyday, [if my machine is awake](https://developer.apple.com/library/archive/documentation/MacOSX/Conceptual/BPSystemStartup/Chapters/ScheduledJobs.html) brew will upgrade.
 - At 8:01 AM everyday, [if my machine is awake](https://developer.apple.com/library/archive/documentation/MacOSX/Conceptual/BPSystemStartup/Chapters/ScheduledJobs.html) this couple of commands will navigate to a repo I have for scripts, pipenv run to use my dependencies, and run the script.
 
-```
-00 08 * * * brew upgrade
-01 08 * * * cd /directory/where/you/put/the/file && pipenv run python ./getchromedriver.py
+```shell
+00 08 * * * /usr/local/bin/brew upgrade >/tmp/stdout.log 2>/tmp/stderr.log
+01 08 * * * cd /directory/where/you/put/the/file \
+&& pipenv run python ./getchromedriver.py \
+>/tmp/stdout.log 2>/tmp/stderr.log
 ```
 
 #### Here is the getchromedriver.py
