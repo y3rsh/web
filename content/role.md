@@ -34,7 +34,7 @@ Status: draft
 #### My ideal role as an individual contributor is making pull requests in roughly the following percentages
 
 - 25% new features and bug fixes (vital to spend at least some time doing feature dev to understand the experience)
-- 70% infrastructure/cicd/tests/documentation/developer productivity
+- 75% infrastructure/cicd/tests/documentation/developer productivity
 
 #### My ideal role as a Leader
 
