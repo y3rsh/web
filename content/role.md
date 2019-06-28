@@ -59,7 +59,7 @@ Status: draft
 #### Other
 
 - Countless code reviews and brainstorming sessions with other developers on my team.
-- Lots of merges and builds
+- Lots of merges, builds, and deployments
 - Code reviews for another team implementing pytest for the first time.
 - Strategy meeting to improve performance metrics on a new UI
 - Assisted a developer on another team with a challenging test strategy
