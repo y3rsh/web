@@ -6,7 +6,20 @@ Authors: Josh McVey
 Summary: How I think and how I am valuable.
 Status: draft
 
-### I am a 💜 Productivity Leader 💜
+### 💜 Productivity Leader 💜
+
+> Over 6 years experience working from home fulltime.</br>
+> 10 years experience working with internationally distributed teams.
+
+- 10 years in software development
+- 7 years as a hands on SDET/Test Automation Lead
+- 2 years as Automation Architect
+- 5 years as a Manager of SDETs, developers, and QA folks
+    - performance management and interviewing
+    - team building/scoping/planning/talent assignment
+- 3.5 years as operational manager prior to software (Target Distribution)
+
+## What I do
 
 - Analyze and surface risks to; business, quality, reliability, sustainability, performance, usability, and developer happiness
 - Contribute/Consult as a developer whose strength is testing/infrastructure/process/tools
@@ -31,17 +44,17 @@ Status: draft
 
 >"Josh is a truly brilliant and innovative engineer.  With every project he improves our processes and automation. He has taken ownership of tough issues facing Rackspace as a whole by developing tools used by a wide variety of teams to solve tough issues...."
 
-#### My ideal role as an individual contributor is making pull requests in roughly the following percentages
+#### What I am looking for
 
-- 25% new features and bug fixes (vital to spend at least some time doing feature dev to understand the experience)
-- 75% infrastructure/cicd/tests/documentation/developer productivity
+I am actively seeking a remote role with up to 40% travel.  Strategy, mentoring, leading, architecture, ideas, and process are where I am strongest.  Ideally, I would still like to write code setting up frameworks, integrations, devops, and jumping in on hard problems if appropriate.  Working with customers implementing products is also exciting.
+Titles might be:
 
-#### My ideal role as a Leader
-
-- 25% Coding
-- 25% Code review
-- 25% Product, Planning, and Strategy
-- 25% Leading and administration
+- Test Architect
+- Engineering/development manager
+- Software Development Productivity consultant
+- Lead SDET or automated testing/tools/productivity/devops/CI/CD
+- Implementation engineer
+- Customer success engineer
 
 ### Snapshot of some recent work
 

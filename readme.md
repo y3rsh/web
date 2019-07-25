@@ -7,3 +7,11 @@
 ## Theme
 
 > copied [simple-bootstrap](https://github.com/getpelican/pelican-themes/tree/master/simple-bootstrap) and customized right in this repo
+
+> some commands
+
+```shell
+pipenv run invoke up
+pipenv run invoke prod-deploy
+lsof -t -i tcp:8000 | xargs kill
+```
