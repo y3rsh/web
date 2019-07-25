@@ -13,7 +13,7 @@ Status: draft
 
 - 10 years in software development
 - 7 years as a hands on SDET/Test Automation Lead
-- 2 years as Automation Architect
+- 2 years as Test/Automation Architect
 - 5 years as a Manager of SDETs, developers, and QA folks
     - performance management and interviewing
     - team building/scoping/planning/talent assignment
