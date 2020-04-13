@@ -1,27 +1,25 @@
-Title: Who is Josh?
-Date: 2019-06-28 8:00
-Modified: 2019-06-28 8:00
-Slug: josh
-Authors: Josh McVey
-Summary: How I think and how I am valuable.
-Status: draft
+Title: Josh
+Status: hidden
+
+
+<br>
 
 ### 💜 Productivity Leader 💜
 
-> Over 6 years experience working from home fulltime.</br>
+> Over 7 years experience working from home fulltime.</br>
 > 10 years experience working with internationally distributed teams.
 
 - 10 years in software development
 - 7 years as a hands on SDET/Test Automation Lead
-- 2 years as Test/Automation Architect
-- 5 years as a Manager of SDETs, developers, and QA folks
+- 2.5 years as Test/Automation Architect
+- 6 years as a Manager of SDETs, developers, and QA folks
     - performance management and interviewing
     - team building/scoping/planning/talent assignment
 - 3.5 years as operational manager prior to software (Target Distribution)
 
 ## What I do
 
-- Analyze and surface risks to; business, quality, reliability, sustainability, performance, usability, and developer happiness
+- Analyze/surface/solve risks to; business, quality, reliability, sustainability, performance, usability, and developer happiness
 - Contribute/Consult as a developer whose strength is testing/infrastructure/process/tools
 - Drive improvement to processes for the team and company
 - Build and improve tools/patterns/code for local development, deployment, testing, checking, monitoring, productivity, and documentation
@@ -50,13 +48,16 @@ I am actively seeking a remote role with up to 40% travel.  Strategy, mentoring,
 Titles might be:
 
 - Test Architect
-- Engineering/development manager
+- Engineering/development/QA manager
 - Software Development Productivity consultant
 - Lead SDET or automated testing/tools/productivity/devops/CI/CD
 - Implementation engineer
 - Customer success engineer
 
 ### Snapshot of some recent work
+
+- Leading a distributed team of 10 people automating test cases for the Amazon Lumberyard gaming engine
+    - This project is a great success with tens of thousands of lines of testing code delivered and running.
 
 #### Sample of pull requests
 
@@ -71,7 +72,7 @@ Titles might be:
 
 #### Other
 
-- Countless code reviews and brainstorming sessions with other developers on my team.
+- Countless code reviews and brainstorming sessions with other developers.
 - Lots of merges, builds, and deployments
 - Code reviews for another team implementing pytest for the first time.
 - Strategy meeting to improve performance metrics on a new UI

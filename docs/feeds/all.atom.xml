@@ -3,13 +3,13 @@
 &lt;p&gt;&lt;strong&gt;BUT&lt;/strong&gt; the headphones work almost too well at shutting out the world!  I used my Google home to alert me 1 minute before meetings.  When I am playing music I can't hear the Google home go off... at max volume....... half a meter away...........&lt;/p&gt;
 &lt;h4&gt;&lt;a href="https://opensource.com/article/17/11/how-use-cron-linux"&gt;Cron with Crontab&lt;/a&gt;&lt;/h4&gt;
 &lt;p&gt;So I decided to play an alert a few times &lt;em&gt;in&lt;/em&gt; the headphones, at least for recurring meetings.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;crontab -e
-&lt;/pre&gt;&lt;/div&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;crontab -e
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;Then I added this line&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;29 09 * * 1,2,3,4,5 for i in {1..4}; do afplay /path/to/alert_sound.mp3; done
-&lt;/pre&gt;&lt;/div&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="err"&gt;29 09 * * 1,2,3,4,5 for i in {1..4}; do afplay /path/to/alert_sound.mp3; done&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;Now every weekday at 9:29 AM I get an alert in my headphones and jump into standup.&lt;/p&gt;
@@ -18,12 +18,12 @@
 &lt;li&gt;At 8:00 AM everyday, &lt;a href="https://developer.apple.com/library/archive/documentation/MacOSX/Conceptual/BPSystemStartup/Chapters/ScheduledJobs.html"&gt;if my machine is awake&lt;/a&gt; brew will upgrade.&lt;/li&gt;
 &lt;li&gt;At 8:01 AM everyday, &lt;a href="https://developer.apple.com/library/archive/documentation/MacOSX/Conceptual/BPSystemStartup/Chapters/ScheduledJobs.html"&gt;if my machine is awake&lt;/a&gt; this couple of commands will navigate to a repo I have for scripts, pipenv run to use my dependencies, and run the script.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="m"&gt;00&lt;/span&gt; &lt;span class="m"&gt;08&lt;/span&gt; * * * /usr/local/bin/brew upgrade &amp;gt;/tmp/stdout.log &lt;span class="m"&gt;2&lt;/span&gt;&amp;gt;/tmp/stderr.log
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="m"&gt;00&lt;/span&gt; &lt;span class="m"&gt;08&lt;/span&gt; * * * /usr/local/bin/brew upgrade &amp;gt;/tmp/stdout.log &lt;span class="m"&gt;2&lt;/span&gt;&amp;gt;/tmp/stderr.log
 &lt;span class="m"&gt;01&lt;/span&gt; &lt;span class="m"&gt;08&lt;/span&gt; * * * &lt;span class="nb"&gt;cd&lt;/span&gt; /directory/where/you/put/the/file &lt;span class="se"&gt;\&lt;/span&gt;
 &lt;span class="o"&gt;&amp;amp;&amp;amp;&lt;/span&gt; pipenv run python ./getchromedriver.py &lt;span class="se"&gt;\&lt;/span&gt;
 &amp;gt;/tmp/stdout.log &lt;span class="m"&gt;2&lt;/span&gt;&amp;gt;/tmp/stderr.log
-&lt;/pre&gt;&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;h4&gt;Here is the getchromedriver.py&lt;/h4&gt;
-&lt;p&gt;&lt;script src="https://gist.github.com/y3rsh/b55d5c8daaac7fb1632cc5a3380aec93.js"&gt;&lt;/script&gt;&lt;/p&gt;</content><category term="Python"></category><category term="fun"></category><category term="mic"></category><category term="headphones"></category></entry><entry><title>Pelican Is Working</title><link href="https://y3rsh.com/working.html" rel="alternate"></link><published>2019-04-10T12:00:00-05:00</published><updated>2019-04-10T12:00:00-05:00</updated><author><name>Josh McVey</name></author><id>tag:y3rsh.com,2019-04-10:/working.html</id><summary type="html">&lt;p&gt;Got pelican working with bootstrap and fontawesome&lt;/p&gt;</summary><content type="html">&lt;p&gt;Finally got my site off Ruby and onto Python.&lt;/p&gt;</content><category term="pelican"></category><category term="publishing"></category></entry></feed>
+&lt;p&gt;&lt;script src="https://gist.github.com/y3rsh/b55d5c8daaac7fb1632cc5a3380aec93.js"&gt;&lt;/script&gt;&lt;/p&gt;</content><category term="Python, cron, crontab, brew"></category><category term="Python"></category><category term="fun"></category><category term="mic"></category><category term="headphones"></category></entry><entry><title>Pelican Is Working</title><link href="https://y3rsh.com/working.html" rel="alternate"></link><published>2019-04-10T12:00:00-05:00</published><updated>2019-04-10T12:00:00-05:00</updated><author><name>Josh McVey</name></author><id>tag:y3rsh.com,2019-04-10:/working.html</id><summary type="html">&lt;p&gt;Got pelican working with bootstrap and fontawesome&lt;/p&gt;</summary><content type="html">&lt;p&gt;Finally got my site off Ruby and onto Python.&lt;/p&gt;</content><category term="Python"></category><category term="pelican"></category><category term="publishing"></category></entry></feed>

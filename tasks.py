@@ -67,5 +67,5 @@ def prod_deploy(c):
     """Publish to GitHub Pages"""
     make_prod(c)
     c.run("git add .")
-    c.run(f"git commit -m {CONFIG.get('commit_message')}")
+    c.run(f"git commit -m \"{CONFIG.get('commit_message')}\"")
     c.run(f"git push origin {CONFIG.get('github_pages_branch')}")

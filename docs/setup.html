@@ -35,13 +35,13 @@
 <p><strong>BUT</strong> the headphones work almost too well at shutting out the world!  I used my Google home to alert me 1 minute before meetings.  When I am playing music I can't hear the Google home go off... at max volume....... half a meter away...........</p>
 <h4><a href="https://opensource.com/article/17/11/how-use-cron-linux">Cron with Crontab</a></h4>
 <p>So I decided to play an alert a few times <em>in</em> the headphones, at least for recurring meetings.</p>
-<div class="highlight"><pre><span></span>crontab -e
-</pre></div>
+<div class="highlight"><pre><span></span><code>crontab -e
+</code></pre></div>
 
 
 <p>Then I added this line</p>
-<div class="highlight"><pre><span></span>29 09 * * 1,2,3,4,5 for i in {1..4}; do afplay /path/to/alert_sound.mp3; done
-</pre></div>
+<div class="highlight"><pre><span></span><code><span class="err">29 09 * * 1,2,3,4,5 for i in {1..4}; do afplay /path/to/alert_sound.mp3; done</span>
+</code></pre></div>
 
 
 <p>Now every weekday at 9:29 AM I get an alert in my headphones and jump into standup.</p>
@@ -50,11 +50,11 @@
 <li>At 8:00 AM everyday, <a href="https://developer.apple.com/library/archive/documentation/MacOSX/Conceptual/BPSystemStartup/Chapters/ScheduledJobs.html">if my machine is awake</a> brew will upgrade.</li>
 <li>At 8:01 AM everyday, <a href="https://developer.apple.com/library/archive/documentation/MacOSX/Conceptual/BPSystemStartup/Chapters/ScheduledJobs.html">if my machine is awake</a> this couple of commands will navigate to a repo I have for scripts, pipenv run to use my dependencies, and run the script.</li>
 </ul>
-<div class="highlight"><pre><span></span><span class="m">00</span> <span class="m">08</span> * * * /usr/local/bin/brew upgrade &gt;/tmp/stdout.log <span class="m">2</span>&gt;/tmp/stderr.log
+<div class="highlight"><pre><span></span><code><span class="m">00</span> <span class="m">08</span> * * * /usr/local/bin/brew upgrade &gt;/tmp/stdout.log <span class="m">2</span>&gt;/tmp/stderr.log
 <span class="m">01</span> <span class="m">08</span> * * * <span class="nb">cd</span> /directory/where/you/put/the/file <span class="se">\</span>
 <span class="o">&amp;&amp;</span> pipenv run python ./getchromedriver.py <span class="se">\</span>
 &gt;/tmp/stdout.log <span class="m">2</span>&gt;/tmp/stderr.log
-</pre></div>
+</code></pre></div>
 
 
 <h4>Here is the getchromedriver.py</h4>
