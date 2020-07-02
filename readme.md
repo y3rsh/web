@@ -15,3 +15,5 @@ pipenv run invoke up
 pipenv run invoke prod-deploy
 lsof -t -i tcp:8000 | xargs kill
 ```
+
+## [Use Poetry](https://python-poetry.org/docs/)

@@ -6,29 +6,32 @@ Status: hidden
 
 ### 💜 Productivity Leader 💜
 
-> Over 7 years experience working from home fulltime.</br>
-> 10 years experience working with internationally distributed teams.
+> Over 8 years experience working from home fulltime.</br>
+> 11 years experience working with internationally distributed teams.
 
-- 10 years in software development
+- 11 years in software development
 - 7 years as a hands on SDET/Test Automation Lead
 - 2.5 years as Test/Automation Architect
-- 6 years as a Manager of SDETs, developers, and QA folks
+- 7 years as a Manager of SDETs, developers, and QA folks
     - performance management and interviewing
     - team building/scoping/planning/talent assignment
 - 3.5 years as operational manager prior to software (Target Distribution)
 
 ## What I do
 
-- Analyze/surface/solve risks to; business, quality, reliability, sustainability, performance, usability, and developer happiness
-- Contribute/Consult as a developer whose strength is testing/infrastructure/process/tools
-- Drive improvement to processes for the team and company
+- Make products better
 - Build and improve tools/patterns/code for local development, deployment, testing, checking, monitoring, productivity, and documentation
+- Contribute/Consult as a developer whose strength is testing/infrastructure/process/tools
+- Analyze/surface/solve risks to; business, quality, reliability, sustainability, performance, usability, and developer happiness
+- Drive improvement to processes for the team and company
+
 
 #### I improve my team’s
 
+- product
+- development efficiency and productivity
 - understanding of risk
 - stability, resilience, quality, and reliability of our infrastructure and software
-- development efficiency and productivity
 - testing value (test the right things the right way)
 - testing speed (faster feedback loops)
 - troubleshooting speed
@@ -36,31 +39,34 @@ Status: hidden
 
 ### What people say about me
 
->"Josh is more than a highly talented senior SDeT in our QE organization, he is an example to others in many ways.  His positive attitude, high level of engagement, outstanding leadership, high quality skillsets in every aspect of his work, not only puts him as a strong SDT in our organization but also as a shining example to others of a Racker who is a natural leader who holds himself to high standards.  Josh not only owns his product but engages with developers, operations, other leaders such as dev managers, to propose solutions to improve the product and the team as a whole."
+>"Josh is more than a highly talented senior SDeT in our QE organization, he is an example to others in many ways.  His positive attitude, high level of engagement, outstanding leadership, high quality skill sets in every aspect of his work, not only puts him as a strong SDT in our organization but also as a shining example to others of a Racker who is a natural leader who holds himself to high standards.  Josh not only owns his product but engages with developers, operations, other leaders such as dev managers, to propose solutions to improve the product and the team as a whole."
 
 >"Josh is naturally a very engaged and positive Racker.  He’s always looking on the bright side of things and problems don’t seem to get to him as much as it would to others.  Any meeting that Josh is part of, he contributes, shares his ideas and always in such a positive and professional manner.  His positivism usually influences the mood in a team meeting and positive conversations are able to be had because of it."
 
 >"Josh is a truly brilliant and innovative engineer.  With every project he improves our processes and automation. He has taken ownership of tough issues facing Rackspace as a whole by developing tools used by a wide variety of teams to solve tough issues...."
 
-#### What I am looking for
-
-I am actively seeking a remote role with up to 40% travel.  Strategy, mentoring, leading, architecture, ideas, and process are where I am strongest.  Ideally, I would still like to write code setting up frameworks, integrations, devops, and jumping in on hard problems if appropriate.  Working with customers implementing products is also exciting.
-Titles might be:
+#### Titles that might apply to me
 
 - Test Architect
+- Customer success engineer
+- Customer integration engineer
 - Engineering/development/QA manager
 - Software Development Productivity consultant
 - Lead SDET or automated testing/tools/productivity/devops/CI/CD
 - Implementation engineer
-- Customer success engineer
+
 
 ### Snapshot of some recent work
 
 - Leading a distributed team of 10 people automating test cases for the Amazon Lumberyard gaming engine
     - This project is a great success with tens of thousands of lines of testing code delivered and running.
+    - With zero game engine knowledge or experience I bootstrapped junior SDETs into a productive team automating complex manual test cases.
 
 #### Sample of pull requests
 
+- data driven tests against a CLI utilizing [pytest parametrizing](https://docs.pytest.org/en/stable/parametrize.html)
+- custom CLI to manage execution of a mixed environment of python 2 and 3 scripts
+- report generator with [pandas](https://pandas.pydata.org) against an API and wed based dashboards 
 - [Unit tests](https://docs.pytest.org/en/latest/) with [extensive mocking of dependent api responses.](https://github.com/gabrielfalcao/HTTPretty)
 - Dockerfile changes to include new dependencies, additional steps in the startup shell script, and re-ordering of commands to improve layer caching in the image
 - Added [linting](http://flake8.pycqa.org/en/latest/), [formatting tools](https://github.com/python/black), and git hooks to enforce the tools are run prior to commit.
@@ -72,6 +78,9 @@ Titles might be:
 
 #### Other
 
+- Pair programming and troubleshooting of broken tests
+- Documentation and videos
+- Interviewing, coaching, and performance improvement plans
 - Countless code reviews and brainstorming sessions with other developers.
 - Lots of merges, builds, and deployments
 - Code reviews for another team implementing pytest for the first time.
