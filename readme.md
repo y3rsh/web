@@ -11,8 +11,8 @@
 > some commands
 
 ```shell
-pipenv run invoke up
-pipenv run invoke prod-deploy
+poetry run invoke up
+poetry run invoke prod-deploy
 lsof -t -i tcp:8000 | xargs kill
 ```
 
