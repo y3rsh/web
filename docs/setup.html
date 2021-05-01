@@ -38,11 +38,9 @@
 <div class="highlight"><pre><span></span><code>crontab -e
 </code></pre></div>
 
-
 <p>Then I added this line</p>
-<div class="highlight"><pre><span></span><code><span class="err">29 09 * * 1,2,3,4,5 for i in {1..4}; do afplay /path/to/alert_sound.mp3; done</span>
+<div class="highlight"><pre><span></span><code><span class="mf">29</span> <span class="mf">09</span> <span class="o">*</span> <span class="o">*</span> <span class="mf">1</span><span class="p">,</span><span class="mf">2</span><span class="p">,</span><span class="mf">3</span><span class="p">,</span><span class="mf">4</span><span class="p">,</span><span class="mf">5</span> <span class="kr">for</span> <span class="n">i</span> <span class="n">in</span> <span class="err">{</span><span class="mf">1..4</span><span class="err">}</span><span class="p">;</span> <span class="n">do</span> <span class="n">afplay</span> <span class="o">/</span><span class="n">path</span><span class="o">/</span><span class="kr">to</span><span class="o">/</span><span class="n">alert_sound</span><span class="mf">.</span><span class="n">mp3</span><span class="p">;</span> <span class="n">done</span>
 </code></pre></div>
-
 
 <p>Now every weekday at 9:29 AM I get an alert in my headphones and jump into standup.</p>
 <p>I also added a couple other tasks to <a href="https://opensource.com/article/17/11/how-use-cron-linux">crontab.</a>  I have a nice script to automatically install the latest chromedriver and I like to keep brew up to date.</p>
@@ -56,9 +54,8 @@
 &gt;/tmp/stdout.log <span class="m">2</span>&gt;/tmp/stderr.log
 </code></pre></div>
 
-
 <h4>Here is the getchromedriver.py</h4>
-<p><script src="https://gist.github.com/y3rsh/b55d5c8daaac7fb1632cc5a3380aec93.js"></script></p>
+<script src="https://gist.github.com/y3rsh/b55d5c8daaac7fb1632cc5a3380aec93.js"></script>
   </div><!-- /.entry-content -->
    <footer class="post-info text-muted">
     Posted on <abbr class="published" title="2019-05-04T08:00:00-05:00">

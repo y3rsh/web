@@ -65,6 +65,8 @@ def make_prod(c):
 @task
 def prod_deploy(c):
     """Publish to GitHub Pages"""
+    clean(c)
+    rebuild(c)
     make_prod(c)
     c.run("git add .")
     c.run(f"git commit -m \"{CONFIG.get('commit_message')}\"")

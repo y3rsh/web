@@ -6,11 +6,9 @@
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;crontab -e
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
-
 &lt;p&gt;Then I added this line&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="err"&gt;29 09 * * 1,2,3,4,5 for i in {1..4}; do afplay /path/to/alert_sound.mp3; done&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="mf"&gt;29&lt;/span&gt; &lt;span class="mf"&gt;09&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="mf"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mf"&gt;2&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mf"&gt;3&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mf"&gt;4&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mf"&gt;5&lt;/span&gt; &lt;span class="kr"&gt;for&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="n"&gt;in&lt;/span&gt; &lt;span class="err"&gt;{&lt;/span&gt;&lt;span class="mf"&gt;1..4&lt;/span&gt;&lt;span class="err"&gt;}&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="n"&gt;do&lt;/span&gt; &lt;span class="n"&gt;afplay&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;path&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="kr"&gt;to&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;alert_sound&lt;/span&gt;&lt;span class="mf"&gt;.&lt;/span&gt;&lt;span class="n"&gt;mp3&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="n"&gt;done&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
 
 &lt;p&gt;Now every weekday at 9:29 AM I get an alert in my headphones and jump into standup.&lt;/p&gt;
 &lt;p&gt;I also added a couple other tasks to &lt;a href="https://opensource.com/article/17/11/how-use-cron-linux"&gt;crontab.&lt;/a&gt;  I have a nice script to automatically install the latest chromedriver and I like to keep brew up to date.&lt;/p&gt;
@@ -24,6 +22,5 @@
 &amp;gt;/tmp/stdout.log &lt;span class="m"&gt;2&lt;/span&gt;&amp;gt;/tmp/stderr.log
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
-
 &lt;h4&gt;Here is the getchromedriver.py&lt;/h4&gt;
-&lt;p&gt;&lt;script src="https://gist.github.com/y3rsh/b55d5c8daaac7fb1632cc5a3380aec93.js"&gt;&lt;/script&gt;&lt;/p&gt;</content><category term="Python, cron, crontab, brew"></category><category term="Python"></category><category term="fun"></category><category term="mic"></category><category term="headphones"></category></entry><entry><title>Pelican Is Working</title><link href="https://y3rsh.com/working.html" rel="alternate"></link><published>2019-04-10T12:00:00-05:00</published><updated>2019-04-10T12:00:00-05:00</updated><author><name>Josh McVey</name></author><id>tag:y3rsh.com,2019-04-10:/working.html</id><summary type="html">&lt;p&gt;Got pelican working with bootstrap and fontawesome&lt;/p&gt;</summary><content type="html">&lt;p&gt;Finally got my site off Ruby and onto Python.&lt;/p&gt;</content><category term="Python"></category><category term="pelican"></category><category term="publishing"></category></entry></feed>
+&lt;script src="https://gist.github.com/y3rsh/b55d5c8daaac7fb1632cc5a3380aec93.js"&gt;&lt;/script&gt;</content><category term="Python, cron, crontab, brew"></category><category term="Python"></category><category term="fun"></category><category term="mic"></category><category term="headphones"></category></entry><entry><title>Pelican Is Working</title><link href="https://y3rsh.com/working.html" rel="alternate"></link><published>2019-04-10T12:00:00-05:00</published><updated>2019-04-10T12:00:00-05:00</updated><author><name>Josh McVey</name></author><id>tag:y3rsh.com,2019-04-10:/working.html</id><summary type="html">&lt;p&gt;Got pelican working with bootstrap and fontawesome&lt;/p&gt;</summary><content type="html">&lt;p&gt;Finally got my site off Ruby and onto Python.&lt;/p&gt;</content><category term="Python"></category><category term="pelican"></category><category term="publishing"></category></entry></feed>
